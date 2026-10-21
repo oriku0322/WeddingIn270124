@@ -486,7 +486,7 @@
                         </div>
                         <div>
                             <p class="text-[11px] tracking-[.18em] text-blush-deep mb-1">VENUE</p>
-                            <p class="font-medium nowrap-important">高雄漢神大飯店</p>
+                            <p class="font-medium nowrap-important">高雄漢神大飯店 9樓冠鶴廳</p>
                         </div>
                         <div>
                             <p class="text-[11px] tracking-[.18em] text-blush-deep mb-1">ADDRESS</p>
@@ -554,10 +554,35 @@
             </div>
 
             <article class="mt-7 v-card rounded-[22px] p-6 sm:p-9">
-                <div class="text-center mb-7"><span class="section-eyebrow">Location & Transport</span>
-                    <h3 class="font-serif text-2xl font-semibold tracking-[.12em] mt-1">交通指南 <span
-                            class="font-cormorant text-lg font-normal tracking-wider">TRANSPORTATION</span></h3>
+                <div class="text-center mb-7"><span class="section-eyebrow">Getting There</span>
+                    <h3 class="font-serif text-2xl font-semibold tracking-[.12em] mt-1">如何前往</h3>
                 </div>
+                <div class="p-5">
+                    <div class="flex items-center gap-4">
+                        <span
+                            class="w-9 h-9 rounded-full bg-champagne/70 flex items-center justify-center flex-shrink-0">
+                            <i class="fa-solid fa-location-dot text-sm"></i>
+                        </span>
+                        <span>
+                            <span class="font-serif font-semibold block">飯店地址</span>
+                            <span class="font-cormorant text-sm tracking-[.12em] text-espresso/55">
+                                LOCATION
+                            </span>
+                        </span>
+                    </div>
+                    <!-- 地址與導航：置中，移除分隔線 -->
+                    <div class="mt-5 text-center">
+                        <p class="address-line text-sm sm:text-base text-espresso/75 leading-7 mb-4">
+                            高雄漢來大飯店：高雄市前金區成功一路266號
+                        </p>
+                        <a href="https://maps.app.goo.gl/k5QPzRAzp4D1AR2o6" target="_blank" rel="noopener noreferrer"
+                            class="inline-flex items-center gap-2 px-5 py-3 rounded-full border border-espresso/45 text-espresso text-sm font-medium tracking-wider hover:bg-espresso hover:text-ivory transition">
+                            <i class="fa-solid fa-location-dot"></i>
+                            開啟 Google 地圖導航
+                        </a>
+                    </div>
+                </div>
+
                 <div id="transportAccordion">
                     <div class="accordion-item"><button class="accordion-header" type="button" aria-expanded="false"
                             aria-controls="transport-mrt" data-accordion="transport-mrt"><span
@@ -618,41 +643,74 @@
                         </div>
                     </div>
                 </div>
-                <div class="mt-7 pt-6 border-t border-gold/20 text-center">
-                    <p class="address-line text-xs text-espresso/55 mb-4">地址：高雄市前金區榮復里成功一路266號</p><a
-                        href="https://maps.app.goo.gl/k5QPzRAzp4D1AR2o6" target="_blank" rel="noopener noreferrer"
-                        class="inline-flex items-center gap-2 px-6 py-3 rounded-full border border-espresso/45 text-espresso text-xs font-medium tracking-wider hover:bg-espresso hover:text-ivory transition"><i
-                            class="fa-solid fa-location-dot"></i>開啟 Google 地圖導航</a>
-                </div>
+
             </article>
         </div>
     </section>
 
     <section id="rsvp" class="py-20 sm:py-28 px-4 bg-champagne/45">
         <div class="max-w-2xl mx-auto">
-            <div class="text-center mb-10"><span class="section-eyebrow">RSVP Form</span>
-                <h2 class="font-serif text-3xl sm:text-4xl font-semibold tracking-[.18em] mt-2">出席回函</h2>
-                <p class="text-xs sm:text-sm text-espresso/60 mt-4 leading-6">請於 2026 年 12 月 15 日前填寫回覆<br>方便我們為您安排最佳席位
+
+            <div class="text-center mb-10">
+                <span class="section-eyebrow">RSVP Form</span>
+
+                <h2 class="font-serif text-3xl sm:text-4xl font-semibold tracking-[.12em] mt-3">
+                    出席回函
+                </h2>
+
+                <p class="text-base sm:text-lg text-[#4A3E3D] mt-5 leading-8">
+                    敬請撥冗填寫出席回覆
+                    <br>
+                    讓我們提前為您安排座位
                 </p>
-                <div class="flex items-center justify-center gap-3 mt-5"><span class="w-14 h-px bg-gold/50"></span><span
-                        class="font-cormorant text-gold">✦</span><span class="w-14 h-px bg-gold/50"></span></div>
+
+                <div class="inline-flex flex-col items-center mt-5 px-6 py-4
+                bg-[#F3EAE0] border border-[#D8C3A5] rounded-lg">
+                    <span class="text-sm sm:text-base font-medium text-[#6B5140]">
+                        回覆截止日期
+                    </span>
+
+                    <span class="text-xl sm:text-2xl font-bold tracking-wide
+                     text-[#4A3E3D] mt-1">
+                        2026 年 11 月 15 日前
+                    </span>
+                </div>
+
+                <div class="flex items-center justify-center gap-3 mt-5">
+                    <span class="w-14 h-px bg-gold/50"></span>
+                    <span class="font-cormorant text-gold">✦</span>
+                    <span class="w-14 h-px bg-gold/50"></span>
+                </div>
             </div>
+
             <div class="bg-ivory rounded-[28px] p-6 sm:p-10 shadow-vintage border border-gold/20"><iframe
                     name="hidden_iframe" id="hidden_iframe" style="display:none"
                     title="Hidden Google Form Submission"></iframe>
                 <form id="weddingForm"
                     action="https://docs.google.com/forms/d/e/1FAIpQLSc2yx0W75cTVC5j0dQZmudAcLlBcCoxxleun15JXJMHBb-GWQ/formResponse"
                     method="POST" target="hidden_iframe" class="space-y-6">
-                    <div><label for="name" class="block text-sm font-semibold text-espresso mb-2">姓名 <span
-                                class="font-cormorant text-xs tracking-[.12em] text-espresso/55">NAME</span> <span
-                                class="text-blush-deep">*</span></label><input id="name" type="text"
-                            name="entry.1054784385" required autocomplete="name" placeholder="請輸入您的姓名"
-                            class="form-input px-4 py-3"></div>
-                    <div><label for="email" class="block text-sm font-semibold text-espresso mb-2">電子信箱 <span
-                                class="font-cormorant text-xs tracking-[.12em] text-espresso/55">EMAIL</span> <span
-                                class="text-blush-deep">*</span></label><input id="email" type="email"
-                            name="entry.1168724549" required autocomplete="email" placeholder="example@email.com"
-                            class="form-input px-4 py-3"></div>
+                    <!-- 姓名欄位 -->
+                    <div>
+                        <label for="name" class="block text-sm font-semibold text-espresso mb-2">
+                            姓名 <span class="font-cormorant text-xs tracking-[.12em] text-espresso/55">NAME</span>
+                            <span class="text-blush-deep">*</span>
+                        </label>
+                        <input id="name" type="text" name="entry.1678849161" required autocomplete="name"
+                            placeholder="請輸入您的姓名"
+                            class="form-input px-4 py-3 w-full rounded-xl border border-oatmeal bg-white focus:outline-none focus:ring-2 focus:ring-fogpink focus:border-transparent text-cocoa transition">
+                    </div>
+
+                    <!-- 行動電話欄位 -->
+                    <div>
+                        <label for="phone" class="block text-sm font-semibold text-espresso mb-2">
+                            行動電話 <span class="font-cormorant text-xs tracking-[.12em] text-espresso/55">PHONE</span>
+                            <span class="text-blush-deep">*</span>
+                        </label>
+                        <input id="phone" type="tel" name="entry.1224390320" required autocomplete="tel"
+                            placeholder="請輸入正確的 10 位數手機號碼，例如 0912345678" pattern="09\d{8}"
+                            class="form-input px-4 py-3 w-full rounded-xl border border-oatmeal bg-white focus:outline-none focus:ring-2 focus:ring-fogpink focus:border-transparent text-cocoa transition">
+                    </div>
+
                     <div><label for="relationship" class="block text-sm font-semibold text-espresso mb-2">您是哪方的親友 <span
                                 class="font-cormorant text-xs tracking-[.12em] text-espresso/55">RELATIONSHIP</span>
                             <span class="text-blush-deep">*</span></label><select id="relationship"
@@ -754,8 +812,7 @@
             "https://i.postimg.cc/LskMppLr/VINCENT-64.jpg",
             "https://i.postimg.cc/q7452C68/VINCENT-322.jpg",
             "https://i.postimg.cc/FRQChkN1/VINCENT-166.jpg",
-            "https://i.postimg.cc/50RHwLy2/VINCENT-207.jpg",
-            "https://i.postimg.cc/6QGHNpXT/S-67280907.jpg"
+            "https://i.postimg.cc/50RHwLy2/VINCENT-207.jpg"
         ];
 
         let currentGalleryIndex = 0;
